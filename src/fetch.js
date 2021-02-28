@@ -296,23 +296,10 @@ async function fetchData({
 
 	// mine
 if (type.includes(`wordpress__redirection_redirect`)) {
-	//console.log(url);
-//routeResponse = routeResponse.items;	  
-//console.log(routeResponse['items']);	
-/*Object.keys(routeResponse).map(function(key, index) {
-	console.log(key);
-	console.log(index);
-	if (key == 'items') { 
-		routeResponse = index;
-	}
-});*/
-    //  routeResponse = routeResponse.map(r => {
-    //    return r.items;
-    //  });
-routeResponse.map(function(key, index) {
-		routeResponse = key.items;
-});
-	  console.log(routeResponse);
+
+	routeResponse.map(function(key, index) {
+			routeResponse = key.items;
+	});
 }
 
     if (Array.isArray(routeResponse)) {
@@ -421,8 +408,8 @@ async function getPages({
         })}`
       };
 	
-	//if (strpos(url, 'redirection/v1/redirect') > 0) {
-	if ( url == 'http://localhost/woosales/wp-json/redirection/v1/redirect') {	
+	if (strpos(url, 'redirection/v1/redirect') > 0) {
+	//if ( url == 'http://localhost/woosales/wp-json/redirection/v1/redirect') {	
 	   o = {
         method: `get`,
         url: `${url}?${querystring.stringify({
