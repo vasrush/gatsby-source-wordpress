@@ -1,12 +1,12 @@
 {
-  "name": "@vasrush/gatsby-source-wp",
-  "description": "Gatsby source wordpress Rest API v3 with Redirections",
-  "author": {
-    "name": "Sebastien Fichot",
-    "email": "fichot.sebastien@gmail.com"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  "name": "gatsby-source-wp",
+  "version": "3.8.0",
+  "description": "Gatsby source wordpress with redirection",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir . --ignore \"**/__tests__\"",
+    "prepare": "cross-env NODE_ENV=production npm run build",
+    "watch": "babel -w src --out-dir . --ignore \"**/__tests__\""
   },
   "dependencies": {
     "@babel/runtime": "^7.12.5",
@@ -27,22 +27,18 @@
     "babel-preset-gatsby-package": "^0.12.0",
     "cross-env": "^7.0.3"
   },
-  "engines": {
-    "node": ">=10.13.0"
-  },
-  "homepage": "https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-source-wordpress#readme",
-  "license": "MIT",
-  "peerDependencies": {
-    "gatsby": "^2.0.15"
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vasrush/gatsby-source-wp.git",
+    "url": "git+https://github.com/vasrush/gatsby-source-wp.git"
   },
-  "scripts": {
-    "build": "babel src --out-dir",
-    "prepare": "cross-env NODE_ENV=production npm run build",
-    "watch": "babel -w src --out-dir"
+  "keywords": [
+    "gatsby",
+    "wordpress"
+  ],
+  "author": "vasrush",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vasrush/gatsby-source-wp/issues"
   },
-  "version": "3.11.0"
+  "homepage": "https://github.com/vasrush/gatsby-source-wp#readme"
 }
