@@ -38,7 +38,6 @@
     "gatsby-source-plugin"
   ],
   "license": "MIT",
-  "name": "gatsby-source-wp",
   "peerDependencies": {
     "gatsby": "^2.0.15"
   },
