@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-source-wp",
+  "name": "gatsby-source-wordpress",
   "version": "3.8.0",
   "description": "Gatsby source wordpress with redirection",
   "main": "index.js",
@@ -29,7 +29,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vasrush/gatsby-source-wp.git"
+    "url": "git+https://github.com/vasrush/gatsby-source-wordpress.git"
   },
   "keywords": [
     "gatsby",
@@ -38,7 +38,7 @@
   "author": "vasrush",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vasrush/gatsby-source-wp/issues"
+    "url": "https://github.com/vasrush/gatsby-source-wordpress/issues"
   },
-  "homepage": "https://github.com/vasrush/gatsby-source-wp#readme"
+  "homepage": "https://github.com/vasrush/gatsby-source-wordpress#readme"
 }
